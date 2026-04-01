@@ -1,0 +1,23 @@
+<script>
+
+    function mostra(frase) {
+        document.write(frase + "<br>");
+    }
+
+    function calculeIMC(altura, peso) {
+        var imc = peso / (altura * altura);
+        return imc;
+    }
+
+    var peso = 75;
+    var altura = 1.72;
+    var imc = calculeIMC(altura, peso);
+
+    mostra("Meu imc é " + imc.toFixed(2));
+    mostra("Ainda estou " + (imc - 18.5).toFixed(2) + " pontos acima do limite da magreza.");
+    mostra("A diferença entre o meu IMC e o da obesidade severa é de: " + (35 - imc).toFixed(2));
+    mostra("Meu IMC é: " + calculeIMC(altura, peso));
+
+    mostra("Meu IMC é: "+ Math.round(imc));
+
+</script>

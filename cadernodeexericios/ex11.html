@@ -1,0 +1,14 @@
+<body>
+    <script>
+        var HT = parseInt(prompt("Digite suas horas trabalhadas no mês: "));
+        var VH = parseInt(prompt("Digite suas horas trabalhadas: "));
+        var PD = parseInt(prompt("Digite seu valor de desconto: "));
+        var SB = HT * VH ;
+        var TD = (PD / 100) * SB ;
+        var SL = SB - TD ;
+        document.write("O valor de VH é: " + HT + "<br>");
+        document.write("O valor de SB é: " + SB + "<br>");
+        document.write("O valor do TD é de: " + TD + "<br>");
+        document.write("O valor do SL é de: " + SL);
+    </script>
+</body>
