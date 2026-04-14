@@ -1,0 +1,17 @@
+<script>
+    var nome = prompt("Digite seu nome: ");
+    var m = parseInt(prompt("Digite o valor da sua nota da prova de matemtática: "));
+    var p = parseInt(prompt("Digite o valor da sua nota da prova de português: "));
+    var c = parseInt(prompt("Digite o valor da sua nota da prova de conhecimentos gerais: "));
+    var media = m + p + c / 3;
+
+    document.write("Nota de matemática: " + m +"<br>");
+    document.write("Nota de português: " + p +"<br>");
+    document.write("Nota de conhecimentos gerais: " + c +"<br>");
+
+    if(media >= 7) {
+        document.write(nome + " " + "aprovado!");
+    } else if (media < 5) {
+        document.write(nome + " " + "reprovado!");
+    }
+</script>

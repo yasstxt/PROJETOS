@@ -1,0 +1,40 @@
+<script>
+   var corretor1 = parseFloat(prompt("Digite o nome do corretor 1: "));
+   var corretor2 = parseFloat(prompt("Digite o nome do corretor 2: "));
+   var corretor3 = parseFloat(prompt("Digite o nome do corretor 3: "));
+   var venda1 = parseFloat(prompt("Digite o valor de vendas do corretor 1: "));
+   var venda2 = parseFloat(prompt("Digite o valor de vendas do corretor 2: "));
+   var venda3 = parseFloat(prompt("Digite o valor de vendas do corretor 3: "));
+   var comissao = comissao1 , comissao2 , comissao3
+   var totalvendas = venda1 + venda2 +venda3
+
+   if (venda1 < 50000) {
+        comisssao1 = venda1 * 0.12;
+   } else if (venda >= 30000) {
+    comissao1 = venda1 * 0.95;
+   } else {
+        comissao1 = venda1 * 0.07;
+    }
+
+    if (venda2 < 50000) {
+        comisssao2 = venda2 * 0.12;
+   } else if (venda >= 30000) {
+    comissao2 = venda2 * 0.95;
+   } else {
+        comissao2 = venda2 * 0.07;
+    }
+
+    if (venda3 < 50000) {
+        comisssao3 = venda3 * 0.12;
+   } else if (venda >= 30000) {
+    comissao3 = venda3 * 0.95;
+   } else {
+        comissao3 = venda3 * 0.07;
+    }
+
+    document.write("Relátório de Vendas: " + "<br>" + "<br>");
+    document.write("Corretor 1: " + corretor1 + ". " + "Vendas: " + venda1 + ". " + "Comissão: " + comissao1 + "<br>");
+    document.write("Corretor 2: " + corretor2 + ". " + "Vendas: " + venda2 + ". " + "Comissão: " + comissao2 + "<br>");
+    document.write("Corretor 3: " + corretor3 + ". " + "Vendas: " + venda3 + ". " + "Comissão: " + comissao3 + "<br>");
+    document.write("Total de vendas: " + totalvendas);
+</script>

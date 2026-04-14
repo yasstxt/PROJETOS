@@ -1,0 +1,31 @@
+<script>
+    var parafuso = parseInt(prompt("Digite quantos parafusos você comprou: "));
+    var porca = parseInt(prompt("Digite quantas porcas você comprou: "));
+    var arruela = parseInt(prompt("Digite quantas arruelas você comprou: "));
+    var nome = prompt("Digite o seu nome: ");
+
+    var precoparafuso = parseFloat(prompt("Digite o valor do parafuso: "));
+    var precoporca = parseFloat(prompt("DIgite o valor da porca: "));
+    var precoarruela = parseFloat(prompt("Digite o valor da arruela: "));
+
+    var totalp = parafuso * precoparafuso;
+    var totalpc = porca * precoporca;
+    var totalar = arruela * precoarruela;
+    var totalcompra = precoparafuso + precoporca + precoarruela;
+
+    var descontoparafuso = totalp * 0.20
+    var descontoporca = totalpc * 0.10
+    var deescontoarruela = totalar * 0.30;
+    var totaldesconto = descontoparafuso - descontoporca - deescontoarruela
+    var totalpagar = totalcompra - totaldesconto
+
+    document.write("Nome do cliente: " + nome + "<br>");
+    document.write("Quantidade de parafusos: " + parafusos + "<br>");
+    document.write("Valor dos parafusos: " + precoparafuso + "<br>" );
+    document.write("Quantidade de porcas: " + porcas + "<br>");
+    document.write("Valor das porcas: " + precoporca + "<br>");
+    document.write("Quantidade de arruelas: " + arruela + "<br>");
+    document.write("Valor das arruelas: " + precoarruela + "<br>");
+    document.write("Valor total de desonto: " + totaldesconto + "<br>"); 
+    document.write("Valor total da compra: " + totalcompra );
+</script>
